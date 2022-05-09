@@ -1,0 +1,40 @@
+//Parte 1
+public class Main {
+    public static void main(String[] args){
+         calc(12, 1, 3);
+    }
+
+    public static void calc(int a, int b, int c){
+        int resultado;
+        resultado = a + b + c;
+
+        System.out.println(resultado);
+
+    }
+}
+
+
+
+//Parte 2
+public class Main {
+    public static void main(String[] args) {
+        Coche miCoche = new Coche();
+
+        miCoche.aPuerta();
+        miCoche.aPuerta();
+        miCoche.aPuerta();
+        miCoche.aPuerta();
+
+        System.out.println(miCoche.puerta);
+    }
+
+    static class Coche {
+        public int puerta = 0;
+
+        public void aPuerta() {
+            this.puerta++;
+        }
+
+
+    }
+}
